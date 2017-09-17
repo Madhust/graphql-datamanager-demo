@@ -1,0 +1,24 @@
+{
+  "name": "graphql-datamanager-demo",
+  "version": "1.0.0",
+  "description": "Playing around with GraphQL and expressjs",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node ./node_modules/webpack/bin/webpack ./main.js ./bundle.js",
+    "server": "node ./src/server.js",
+    "start": "npm run compile && node ./node_modules/lite-server/bin/lite-server"
+  },
+  "author": "Madhu Sudhanan P",
+  "license": "MIT",
+  "dependencies": {
+    "express": "*",
+    "cors": "*",
+    "express-graphql": "*",
+    "graphql": "*",
+    "ej2-graphql-adaptor": "1.1.0"
+  },
+  "devDependencies": {
+    "webpack": "*",
+    "lite-server": "^2.3.0"
+  }
+}
